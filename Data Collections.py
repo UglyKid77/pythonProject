@@ -57,4 +57,42 @@ band_cap = band.upper()
 print(band_cap)
 
 
-#### Tuples
+#### TUPLES  ()  -- are unmutable
+
+empty_t  = ()
+one_element_t_a = (1,)
+one_element_t_b = 1,
+
+puf = ('Nathalie', 'Madrid', 47)
+print(puf)
+print(puf[0])
+
+
+### Tuple operations
+
+Capitals = [('Madrid', 'Spain', 4.0), ('London', 'UK', 5.0), ('Berlin', 'Germany', 3.5)] #Tuple in list
+for n in Capitals:
+    print('Name:', Capitals[0], 'Country:', Capitals[1], 'Pop:', Capitals[2])
+
+puf = ('Nathalie', 'Madrid', 47,  [120, 50])  #Also tuples are unmutable but list inside them remain mutable
+print(puf)
+puf[3].append(60)
+print(puf)
+
+### DICTIONARIES
+
+esp = {'Hund': 'Perro', 'Katze': 'Gato', 'Vogel': 'Pájaro'}
+print(esp)
+print(esp['Vogel'])
+
+### Dic operations
+
+for i in esp:   #To print the keys
+    print(i)
+
+for i in esp.values():  #to print the Values
+    print(i)
+
+for tier, animal in esp.items():  #to print both
+    print(tier, 'is a', animal)
+
