@@ -63,7 +63,7 @@ def get_number():
 
 print(get_number())
 gen = get_number()
-print(next(gen))
+print(next(gen))   #'next' function to call the yieled (yield function) values one by one
 print(next(gen))
 print(next(gen))
 
@@ -72,4 +72,27 @@ for x in get_number():
 
 numbers = list(get_number())   #creating a list
 print(numbers)
+
+#Exeptions intro
+
+# try:
+#     val = int(input('enter value (integer): '))
+#     print('The inverted value is ', 1/val)
+# except ValueError:
+#     print('Not a number')
+# except ZeroDivisionError:
+#     print('Impossible to divide by 0')
+# except:
+#     print('Something wrong happened')
+#
+
+#Assertions
+
+def calculate_inv(number):
+      assert (number != 0), '0 is not valid'
+      return 1/number
+
+calculate_inv(0)
+
+
 
